@@ -6,7 +6,7 @@ from os.path import abspath, dirname
 from alembic import context
 from app.database import Base
 from app.config import settings
-from app.users.models import User
+from app.users.models import Users
 
 sys.path.insert(0, dirname(dirname(dirname(abspath(__file__)))))
 
