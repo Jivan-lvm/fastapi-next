@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from users.schemas import SUserRegister
+from app.users.schemas import SUserRegister
 from app.users.dao import UsersDAO
 from app.users.auth import get_password_hash
 
@@ -7,7 +7,6 @@ from app.users.auth import get_password_hash
 router = APIRouter(
     prefix="/auth",
     tags=["auth"],
-    responses={404: {"description": "Not found"}},
 )
 
 
