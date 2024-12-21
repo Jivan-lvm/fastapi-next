@@ -5,7 +5,7 @@ from app.users.auth import get_password_hash
 
 
 router = APIRouter(
-    prefix="/auth",
+    prefix="/api/v1/auth",
     tags=["auth"],
 )
 
